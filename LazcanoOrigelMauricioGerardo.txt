@@ -1,0 +1,11 @@
+###COMO HACER QUE GIT IGNORE ARCHIVOS AL USAR 'git add *'###
+Mauricio Gerardo Lazcano Origel AKA Silver dragon
+
+Simplemente hay que agregar un punto al principio del nombre del archivo que quieres que GIT ignore.
+
+"add *" agrega todos los archivos del directorio a la historia, exceptuando los archivos que comiencen con un punto, es decir
+los archivos ocultos. El caracter asterisco está definido por el shell, y no por GIT, por lo que se considera el asterisco
+como todo un arreglo de los archivos dentro del directorio.
+
+"add ." agrega todos los archivos, incluyendo los que inician con punto. El caracter punto está definido por GIT, que hace
+guardar todos los archivos de forma recursiva, sin importar sus nombres.
